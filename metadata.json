@@ -1,0 +1,6 @@
+{
+  "name": "BAYBURT ÖZKA İNŞAAT TALEP PORTALI",
+  "description": "Bayburt Özka İnşaat şantiye ve birim talep yönetim ve onay portalı",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Arama Motorları (Google, Yandex, Bing vb.) İndeksleme ve Taramayı Tamamen Kapatma -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache, notranslate" />
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+    <meta name="googlebot-news" content="noindex, nofollow" />
+    <meta name="yandex" content="none" />
+    <meta name="yandex" content="noindex, nofollow, noarchive" />
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="slurp" content="noindex, nofollow" />
+    <meta name="duckduckbot" content="noindex, nofollow" />
+    <meta name="baiduspider" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+
+    <title>BAYBURT ÖZKA İNŞAAT TALEP PORTALI</title>
+    <meta name="description" content="Bayburt Özka İnşaat şantiye ve birim talep yönetim ve onay portalı" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Sayfa İnceleme (F12, Sağ Tık, Kısayollar) Engelleme Güvenlik Katmanı -->
+    <script>
+      (function() {
+        // Sağ tık engelleme
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          return false;
+        }, true);
+
+        // F12 ve geliştirici tuşları engelleme
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+          }
+          if ((e.ctrlKey || e.metaKey) && e.shiftKey) {
+            var k = (e.key || '').toUpperCase();
+            if (k === 'I' || k === 'J' || k === 'C' || k === 'K' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67 || e.keyCode === 75) {
+              e.preventDefault();
+              return false;
+            }
+          }
+          if ((e.ctrlKey || e.metaKey)) {
+            var k = (e.key || '').toUpperCase();
+            if (k === 'U' || k === 'S' || e.keyCode === 85 || e.keyCode === 83) {
+              e.preventDefault();
+              return false;
+            }
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body class="bg-[#0b172a] text-slate-100 min-h-screen select-none" oncontextmenu="return false;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
